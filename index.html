@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="A little collection of kind messages, made with care.">
+  <title>A Little Something for You</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="page-header">
+      <p class="eyebrow">A LITTLE NOTE</p>
+      <h1>A Little Something <span>for You</span></h1>
+      <p class="intro">A few words to make an ordinary day feel a little brighter.</p>
+    </header>
+
+    <section class="carousel" aria-label="Message carousel">
+      <ul class="slider">
+        <li class="item is-active" data-slide="1" data-title="Your Amazing..." data-message="I was thinking about you today and couldn't help but smile. Your presence has a way of making everything better.">
+          <img class="item-image" src="https://iili.io/J5Lmu4V.png" alt="Decorative illustration for the first message" fetchpriority="high">
+          <div class="image-shade"></div>
+          <div class="content">
+            <p class="content-label">A LITTLE REMINDER</p>
+            <h2 class="title">Your Amazing...</h2>
+            <p class="description">I was thinking about you today and couldn't help but smile. Your presence has a way of making everything better.</p>
+            <button class="read-more" type="button">Read More <span aria-hidden="true">↗</span></button>
+          </div>
+        </li>
+
+        <li class="item" data-slide="2" data-title="You Are Magical" data-message="Are you a magician? Because whenever I look at you, everyone else seems to disappear. ✨">
+          <img class="item-image" src="https://iili.io/J5Lm7v1.png" alt="Decorative illustration for the second message" loading="lazy">
+          <div class="image-shade"></div>
+          <div class="content">
+            <p class="content-label">A LITTLE MAGIC</p>
+            <h2 class="title">You Are Magical</h2>
+            <p class="description">Are you a magician? Because whenever I look at you, everyone else seems to disappear. ✨</p>
+            <button class="read-more" type="button">Read More <span aria-hidden="true">↗</span></button>
+          </div>
+        </li>
+
+        <li class="item" data-slide="3" data-title="Always on My Mind" data-message="You have a way of making every day feel a little brighter. Some people just stay in your thoughts in the nicest way. 😍">
+          <img class="item-image" src="https://iili.io/J5Lm5YP.png" alt="Decorative illustration for the third message" loading="lazy">
+          <div class="image-shade"></div>
+          <div class="content">
+            <p class="content-label">A THOUGHT FOR YOU</p>
+            <h2 class="title">Always on My Mind</h2>
+            <p class="description">You have a way of making every day feel a little brighter. Some people just stay in your thoughts in the nicest way. 😍</p>
+            <button class="read-more" type="button">Read More <span aria-hidden="true">↗</span></button>
+          </div>
+        </li>
+
+        <li class="item" data-slide="4" data-title="When I'm Lost, I Find You" data-message="Do you have a map? Because I keep getting lost in your eyes whenever I see you. 🌟">
+          <img class="item-image" src="https://iili.io/J5LmcTg.png" alt="Decorative illustration for the fourth message" loading="lazy">
+          <div class="image-shade"></div>
+          <div class="content">
+            <p class="content-label">A SWEET THOUGHT</p>
+            <h2 class="title">When I'm Lost, I Find You</h2>
+            <p class="description">Do you have a map? Because I keep getting lost in your eyes whenever I see you. 🌟</p>
+            <button class="read-more" type="button">Read More <span aria-hidden="true">↗</span></button>
+          </div>
+        </li>
+      </ul>
+
+      <div class="carousel-footer">
+        <p class="slide-count" aria-live="polite">01 <span>/</span> 04</p>
+        <div class="controls" aria-label="Carousel controls">
+          <button class="control-button prev" type="button" aria-label="Previous message">←</button>
+          <button class="control-button next" type="button" aria-label="Next message">→</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">Made with a little extra care <span aria-hidden="true">✦</span></footer>
+  </main>
+
+  <dialog class="message-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <p class="content-label">JUST FOR YOU</p>
+      <h2 id="dialog-title">A little message</h2>
+      <p id="dialog-message"></p>
+      <form method="dialog">
+        <button class="dialog-close" type="submit">Close</button>
+      </form>
+    </div>
+  </dialog>
+</body>
+</html>
